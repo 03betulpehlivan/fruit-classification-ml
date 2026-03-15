@@ -37,6 +37,41 @@ kNN: %91.2 doğruluk ile başarılı, ancak Neural Network'ün gerisindedir.
 
 Random Forest: %83.5 doğruluk ile diğer modellere göre daha düşük performans göstermiştir; özellikle yaz meyvelerinde %17.8 hata payı gözlemlenmiştir.
 
+
+
+🚨 Önemli Not – Veri Seti
+
+Veri seti büyük olduğu için GitHub’a yüklenememiştir. Bu nedenle görselleri ayrı olarak Google Drive’dan indirmeniz gerekiyor. Workflow dosyası (meyvesiniflandirmasi_new.ows) veriler olmadan çalışmaz.
+
+Adımlar:
+
+Aşağıdaki linkten veri setini indirin:
+🔗 Meyve Görselleri İndir – Google Drive
+https://drive.google.com/file/d/1MYkVPmrjn1juCHxFwjOq9zFusedSLf5b/view?usp=sharing
+
+İndirdiğiniz zip dosyasını açın. İçinde iki ana klasör olmalı:
+
+yaz_meyveleri
+
+kis_meyveleri
+
+Bu klasörleri .ows dosyasının olduğu dizine yerleştirin. Örnek yapı:
+
+/meyve_projesi/
+   ├─ meyvesiniflandirmasi_new.ows
+   ├─ yaz_meyveleri/
+   └─ kis_meyveleri/
+
+Orange’ı açın ve meyvesiniflandirmasi_new.ows dosyasını yükleyin.
+
+Import Images widget’ına çift tıklayarak, veri setinizin bulunduğu ana klasörü seçin.
+
+İş akışı tamamlandıktan sonra Test and Score veya Confusion Matrix widget’ları ile sonuçları inceleyin.
+
+💡 Not: Workflow çalışırken görsellerin doğru klasörlerde olması çok önemli. Aksi takdirde model veri bulamayacağından hata verir.
+
+
+
 🚀 Kurulum ve Kullanım
 
 Orange Data Mining yazılımını bilgisayarınıza kurun.
